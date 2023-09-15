@@ -7,13 +7,69 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
-    <link href="reset.css" rel="stylesheet"/>
     <link href="styles.css" rel="stylesheet"/>
 </head>
 <body>
     <div class="main-container">
-        <div class="left-side">left side</div>
-        <div class="right-side">right side</div>
+        <div class="left-side">
+            <div class="left-container">
+                <img src="odin-lined.png" alt="odin">
+                <h1>The Odin Project</h1>
+            </div>
+            <p class="left-quote">
+                Photo by <a href="https://unsplash.com/@jonnyuiux?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Jonny Caspari</a> 
+                on <a href="https://unsplash.com/photos/VdiaqFBqajo?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+            </p>
+        </div>
+        <div class="right-side">
+            <section class="right-quote">
+                <blockquote cite="https://genius.com/Pitbull-i-know-you-want-me-calle-ocho-lyrics">
+                    <p>I know you want me (Want me),
+                        You know I want cha (Want cha),
+                        I know you want me,
+                        You know I want cha (Want cha)</p>
+                    <footer>—Pitbull, <cite>Calle Ocho</cite></footer>
+                  </blockquote>
+            </section>
+                  
+            <section class="right-form">     
+                <form action="#" method="get" class="form">
+                    <div class="segment">
+                        <p>Let's do this!</p>
+                    
+                        <div class="surround-form">
+                            
+                            <div class="input">
+                                <label for="first-name">First Name:</label>
+                                <input type="text" id="first-name" name="first-name" required>
+                            </div>
+                            <div class="input">
+                                <label for="last-name">Last Name:</label>
+                                <input type="text" id="last-name" name="last-name" required>
+                            </div>
+                            <div class="input">
+                                <label for="email">Email:</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="input">
+                                <label for="telephone">Telephone:</label>
+                                <input type="tel" id="telephone" name="telephone" required>
+                            </div class="input">
+                            <div class="input">
+                                <label for="password">Password:</label>
+                                <input type="text" id="password" name="password" required>
+                            </div>
+                            <div class="input">
+                                <label for="confirm-password">Confirm Password:</label>
+                                <input type="text" id="confirm-password" name="confirm-password" required>
+                            </div>
+                        </div>  
+                    </div>                      
+                    <button type="submit">Submit</button>  
+                </form>
+                
+            </section>
+        </div>
     </div>
 </body>
 </html>
