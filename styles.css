@@ -90,7 +90,7 @@ body {
 
 .right-side {
     width: 60%;
-    height: 100%;   
+      
 }
 
 .right-quote{
@@ -121,9 +121,6 @@ body {
     margin: 0.1rem;
     
     background-color: white;
-    border: 1px red solid;
-
-
 }
 
 .segment{
@@ -147,23 +144,20 @@ body {
 }
 
 .surround-form{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    
+    display: grid;
+    grid-template-columns: 50% 1fr; /* Two columns: 30% for labels and 1fr for input fields */
+    align-items: center; /* Vertically center elements */
+    gap: 10px; /* Add some spacing between label and input */
+
     font-size: 0.5rem;
     padding: 20px;
 }
 
 .input{
-
     width: 45%;
     gap: 0.2rem;
     text-transform: uppercase;
     opacity: 50%;
-    
-
 }
 
 .input:focus{
@@ -241,5 +235,27 @@ body {
     .left-quote{
         font-style: italic;
         font-size: 0.5rem;
+    }
+
+    .segment{
+        box-shadow: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--white_text);
+    }
+
+    .surround-form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-size: 0.5rem;
+    }
+
+    .right-form button{
+        position: relative;
+        left: 25%;
     }
 }
